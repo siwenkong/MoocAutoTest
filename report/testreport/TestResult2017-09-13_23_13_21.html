@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>测试报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 500px;
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#result_table td {
+    border: 1px solid #777;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #6c6; }
+.failClass  { background-color: #c60; }
+.errorClass { background-color: #c00; }
+.passCase   { color: #6c6; }
+.failCase   { color: #c60; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+
+<div class='heading'>
+<h1>测试报告</h1>
+<p class='attribute'><strong>Start Time:</strong> 2017-09-13 23:13:21</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:49.217000</p>
+<p class='attribute'><strong>Status:</strong> Pass 1 Error 2</p>
+
+<p class='description'>Test the import testcase</p>
+</div>
+
+
+
+<p id='show_detail_line'>Show
+<a href='javascript:showCase(0)'>Summary</a>
+<a href='javascript:showCase(1)'>Failed</a>
+<a href='javascript:showCase(2)'>All</a>
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td>Test Group/Test case</td>
+    <td>Count</td>
+    <td>Pass</td>
+    <td>Fail</td>
+    <td>Error</td>
+    <td>View</td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_meigu.TestMeigu</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
+</tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_pankou</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        pass</a>
+
+    <div id='div_pt1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.1: 2017-09-13 23:13:21,336 - root - INFO - ############################### START ###############################
+No handlers could be found for logger "selenium.webdriver.remote.remote_connection"
+2017-09-13 23:13:24,812 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.46500015259 seconds
+2017-09-13 23:13:25,980 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.15400004387 seconds
+2017-09-13 23:13:27,349 - root - INFO - SUCCESS     Navigated to http://172.16.57.34:8888/?t=696d29e0940a4957748fe3fc9efd22a3,Spend 1.35399985313 seconds
+2017-09-13 23:13:27,492 - root - INFO - SUCCESS     Move to element: &lt;link_text-&gt;实时服务&gt;, Spend 0.134000062943 seconds
+2017-09-13 23:13:30,553 - root - INFO - SUCCESS     Move to element: &lt;link_text-&gt;盘口&gt;, Spend 0.0539999008179 seconds
+2017-09-13 23:13:33,658 - root - INFO - SUCCESS     Clicked element: &lt;link_text-&gt;美股&gt;, Spend 0.0989999771118 seconds
+2017-09-13 23:13:33,940 - root - INFO - SUCCESS     Clear and type element: &lt;id-&gt;param&gt; content: server=183.136.163.57:1818 ;requestId=17176 ;emcode=AAPL.O, Spend 0.274999856949 seconds
+2017-09-13 23:13:34,055 - root - INFO - SUCCESS     Clicked element: &lt;link_text-&gt;提交&gt;, Spend 0.111000061035 seconds
+2017-09-13 23:13:37,131 - root - INFO - Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=0, time=231325, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690044, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482281, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263, pclose=160.86, totalCapital=5165228000, epsqmtb=9.031741, bps=25.637785, roepj=0.2887668, dividendPerShare=1.77}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231326, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690044, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482281, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231326, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690044, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482281, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231326, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690611, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482848, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231326, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690631, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482868, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231326, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690631, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482868, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231326, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690631, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482868, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231326, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690656, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482893, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231326, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690656, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482893, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690656, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482893, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690706, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.9, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690806, high=160.82, low=157.91, open=159.92, waiPan=17252347, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.9, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690814, high=160.82, low=157.91, open=159.92, waiPan=17252355, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.9, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690814, high=160.82, low=157.91, open=159.92, waiPan=17252355, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.9, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690814, high=160.82, low=157.91, open=159.92, waiPan=17252355, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.9, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690814, high=160.82, low=157.91, open=159.92, waiPan=17252355, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.9, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690814, high=160.82, low=157.91, open=159.92, waiPan=17252355, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.9, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690814, high=160.82, low=157.91, open=159.92, waiPan=17252355, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.9, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690814, high=160.82, low=157.91, open=159.92, waiPan=17252355, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.9, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690814, high=160.82, low=157.91, open=159.92, waiPan=17252355, neiPan=5482943, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.9, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690839, high=160.82, low=157.91, open=159.92, waiPan=17252355, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.91, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690939, high=160.82, low=157.91, open=159.92, waiPan=17252455, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.91, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690939, high=160.82, low=157.91, open=159.92, waiPan=17252455, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.91, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690939, high=160.82, low=157.91, open=159.92, waiPan=17252455, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.91, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690939, high=160.82, low=157.91, open=159.92, waiPan=17252455, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.91, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690939, high=160.82, low=157.91, open=159.92, waiPan=17252455, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.91, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690939, high=160.82, low=157.91, open=159.92, waiPan=17252455, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.91, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690939, high=160.82, low=157.91, open=159.92, waiPan=17252455, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.9007, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22692179, high=160.82, low=157.91, open=159.92, waiPan=17253695, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231327, price=158.9007, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22692179, high=160.82, low=157.91, open=159.92, waiPan=17253695, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231328, price=158.9007, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22692179, high=160.82, low=157.91, open=159.92, waiPan=17253695, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231328, price=158.9007, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22692204, high=160.82, low=157.91, open=159.92, waiPan=17253720, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231328, price=158.9007, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22692204, high=160.82, low=157.91, open=159.92, waiPan=17253720, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231328, price=158.9007, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22692204, high=160.82, low=157.91, open=159.92, waiPan=17253720, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231328, price=158.9007, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22692204, high=160.82, low=157.91, open=159.92, waiPan=17253720, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231328, price=158.9007, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22692204, high=160.82, low=157.91, open=159.92, waiPan=17253720, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231328, price=158.9007, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22692204, high=160.82, low=157.91, open=159.92, waiPan=17253720, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231328, price=158.9007, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22692204, high=160.82, low=157.91, open=159.92, waiPan=17253720, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231328, price=158.9007, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22692204, high=160.82, low=157.91, open=159.92, waiPan=17253720, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231328, price=158.9007, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22692204, high=160.82, low=157.91, open=159.92, waiPan=17253720, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231328, price=158.9007, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22692204, high=160.82, low=157.91, open=159.92, waiPan=17253720, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231328, price=158.9007, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22692204, high=160.82, low=157.91, open=159.92, waiPan=17253720, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231328, price=158.9007, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22692204, high=160.82, low=157.91, open=159.92, waiPan=17253720, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231328, price=158.9007, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22692204, high=160.82, low=157.91, open=159.92, waiPan=17253720, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231328, price=158.9007, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22692204, high=160.82, low=157.91, open=159.92, waiPan=17253720, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231328, price=158.9007, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22692204, high=160.82, low=157.91, open=159.92, waiPan=17253720, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263}
+Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=1, time=231328, price=158.9007, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22693054, high=160.82, low=157.91, open=159.92, waiPan=17254570, neiPan=5482968, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263} meigu pankou shuju 
+2017-09-13 23:13:37,138 - root - INFO - securityId=1000199555, push=0, time=231325, price=158.89, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=22690044, high=160.82, low=157.91, open=159.92, waiPan=17252247, neiPan=5482281, avgVol5=3.5098388E7, avg=158.8938, parentnetprofit=3.7637001E10, netprofittb=0.0263, pclose=160.86, totalCapital=5165228000, epsqmtb=9.031741, bps=25.637785, roepj=0.2887668, dividendPerShare=1.77 
+2017-09-13 23:13:37,142 - root - INFO - 159.92 meigu latest price 
+{"desc":"sucess","isResult":"true","result":{"index":[8042],"list":[{"code":"AAPL.O","value":[159.92]}],"pages":1,"pno":1,"psize":3000,"total":1}}
+[u'isResult', u'result', u'desc']
+[{u'code': u'AAPL.O', u'value': [159.92]}]
+AAPL.O
+stockPrice159.92
+2017-09-13 23:13:37,180 - root - INFO - http leasted price 159.92
+2017-09-13 23:13:37,184 - root - INFO - ===============
+2017-09-13 23:13:37,190 - root - INFO - service test get the price159.92 is equal to http 159.92latest price 
+2017-09-13 23:13:40,298 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.10000014305 seconds
+2017-09-13 23:13:40,315 - root - INFO - ############################### END ###############################
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_mooc.TestMoocIndex</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
+</tr>
+
+<tr id='ft2.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_login</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.1')" >
+        error</a>
+
+    <div id='div_ft2.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft2.1: 2017-09-13 23:13:40,322 - root - INFO - ############################### START ###############################
+2017-09-13 23:13:43,755 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.4240000248 seconds
+2017-09-13 23:13:44,907 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.14800000191 seconds
+2017-09-13 23:13:48,571 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 3.65400004387 seconds
+2017-09-13 23:13:48,690 - root - INFO - SUCCESS     Clicked element: &lt;id-&gt;js-signin-btn&gt;, Spend 0.109999895096 seconds
+2017-09-13 23:13:50,154 - root - INFO - SUCCESS     Clear and type element: &lt;name-&gt;email&gt; content: kongsiwen0818@163.com, Spend 1.45500016212 seconds
+2017-09-13 23:13:50,345 - root - INFO - SUCCESS     Clear and type element: &lt;name-&gt;password&gt; content: lkp11104077ksw, Spend 0.18799996376 seconds
+2017-09-13 23:13:50,588 - root - INFO - SUCCESS     Clicked element: &lt;css-&gt;input.btn-red.btn-full.xa-login&gt;, Spend 0.236999988556 seconds
+2017-09-13 23:13:57,609 - root - INFO - FAIL    Unable to click element: &lt;link_text-&gt;å®æ&gt;, Spend 4.01399993896 seconds
+Traceback (most recent call last):
+  File "F:\workspace\MoocAutoTesting\testcase\test_mooc.py", line 14, in test_login
+    moocpage.click_shizhan()
+  File "F:\workspace\MoocAutoTesting\public\pages\moocIndexPage.py", line 36, in click_shizhan
+    self.dr.click('link_text-&gt;å®æ')
+  File "F:\workspace\MoocAutoTesting\public\common\pyselenium.py", line 219, in click
+    el = self.get_element(css)
+  File "F:\workspace\MoocAutoTesting\public\common\pyselenium.py", line 105, in get_element
+    element = self.driver.find_element_by_link_text(value)
+  File "D:\Python27\lib\site-packages\selenium-3.5.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 378, in find_element_by_link_text
+    return self.find_element(by=By.LINK_TEXT, value=link_text)
+  File "D:\Python27\lib\site-packages\selenium-3.5.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 832, in find_element
+    'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium-3.5.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python27\lib\site-packages\selenium-3.5.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=60.0.3112.113)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 10.0.15063 x86_64)
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_personal_setting.TestPersonalSetting</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c3',1)">Detail</a></td>
+</tr>
+
+<tr id='ft3.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_setting</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.1')" >
+        error</a>
+
+    <div id='div_ft3.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.1: 2017-09-13 23:14:00,665 - root - INFO - ############################### START ###############################
+2017-09-13 23:14:04,158 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.47699999809 seconds
+2017-09-13 23:14:05,313 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.14899992943 seconds
+2017-09-13 23:14:07,405 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.08599996567 seconds
+2017-09-13 23:14:07,418 - root - INFO - FAIL    Unable to click element: &lt;id-&gt;js-signin-btn&gt;, Spend 0.00200009346008 seconds
+Traceback (most recent call last):
+  File "F:\workspace\MoocAutoTesting\testcase\test_personal_setting.py", line 9, in test_setting
+    settingPage.click_login_button()
+  File "F:\workspace\MoocAutoTesting\public\pages\moocSettingPage.py", line 13, in click_login_button
+    self.dr.click('id-&gt;js-signin-btn')
+  File "F:\workspace\MoocAutoTesting\public\common\pyselenium.py", line 219, in click
+    el = self.get_element(css)
+  File "F:\workspace\MoocAutoTesting\public\common\pyselenium.py", line 99, in get_element
+    element = self.driver.find_element_by_id(value)
+  File "D:\Python27\lib\site-packages\selenium-3.5.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 330, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "D:\Python27\lib\site-packages\selenium-3.5.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 832, in find_element
+    'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium-3.5.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python27\lib\site-packages\selenium-3.5.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=60.0.3112.113)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 10.0.15063 x86_64)
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='total_row'>
+    <td>Total</td>
+    <td>3</td>
+    <td>1</td>
+    <td>0</td>
+    <td>2</td>
+    <td>&nbsp;</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+
+</body>
+</html>

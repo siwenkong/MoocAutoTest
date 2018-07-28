@@ -1,0 +1,179 @@
+2017-09-06 07:49:15,859 - root - INFO - ############################### START ###############################
+2017-09-06 07:49:19,282 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.41900014877 seconds
+2017-09-06 07:49:20,411 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.12400007248 seconds
+2017-09-06 07:49:22,246 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 1.83100008965 seconds
+2017-09-06 07:49:22,348 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.095999956131 seconds
+2017-09-06 07:49:23,654 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.29999995232 seconds
+2017-09-06 07:49:23,805 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp1114077ksw, Spend 0.147000074387 seconds
+2017-09-06 07:49:26,927 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.11599993706 seconds
+2017-09-06 07:49:26,940 - root - INFO - ############################### END ###############################
+2017-09-06 07:49:31,931 - root - INFO - 发送邮件成功
+2017-09-06 07:52:58,555 - root - INFO - ############################### START ###############################
+2017-09-06 07:53:01,921 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.36100006104 seconds
+2017-09-06 07:53:03,062 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.13899993896 seconds
+2017-09-06 07:53:04,987 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 1.91000008583 seconds
+2017-09-06 07:53:05,098 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.104000091553 seconds
+2017-09-06 07:53:06,438 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.33599996567 seconds
+2017-09-06 07:53:06,601 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp1114077ksw, Spend 0.155999898911 seconds
+2017-09-06 07:53:09,733 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.1289999485 seconds
+2017-09-06 07:53:09,747 - root - INFO - ############################### END ###############################
+2017-09-06 07:53:14,349 - root - INFO - 发送邮件成功
+2017-09-06 07:55:44,982 - root - INFO - ############################### START ###############################
+2017-09-06 07:55:48,380 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.39400005341 seconds
+2017-09-06 07:55:49,539 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.15300011635 seconds
+2017-09-06 07:55:51,516 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 1.96399998665 seconds
+2017-09-06 07:55:51,619 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.095999956131 seconds
+2017-09-06 07:55:52,904 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.27999997139 seconds
+2017-09-06 07:55:53,055 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp1114077ksw, Spend 0.144999980927 seconds
+2017-09-06 07:55:53,061 - root - INFO - FAIL    Unable to click element: <class->btn-red>, Spend 0.0 seconds
+2017-09-06 07:55:56,207 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.14100003242 seconds
+2017-09-06 07:55:56,221 - root - INFO - ############################### END ###############################
+2017-09-06 07:55:59,822 - root - INFO - 发送邮件成功
+2017-09-06 08:06:14,773 - root - INFO - ############################### START ###############################
+2017-09-06 08:06:18,250 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.47199988365 seconds
+2017-09-06 08:06:19,387 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.13099980354 seconds
+2017-09-06 08:06:21,292 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 1.90000009537 seconds
+2017-09-06 08:06:21,401 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.101999998093 seconds
+2017-09-06 08:06:22,717 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.30999994278 seconds
+2017-09-06 08:06:22,867 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp1114077ksw, Spend 0.145000219345 seconds
+2017-09-06 08:06:22,871 - root - INFO - FAIL    Unable to click element: <css->btn-red.btn-full.xa-login>, Spend 0.0 seconds
+2017-09-06 08:06:26,013 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.13499999046 seconds
+2017-09-06 08:06:26,013 - root - INFO - ############################### END ###############################
+2017-09-06 08:06:29,914 - root - INFO - 发送邮件成功
+2017-09-06 08:09:44,299 - root - INFO - ############################### START ###############################
+2017-09-06 08:09:47,703 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.39900016785 seconds
+2017-09-06 08:09:48,839 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.13199996948 seconds
+2017-09-06 08:09:50,848 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.00200009346 seconds
+2017-09-06 08:09:50,979 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.123000144958 seconds
+2017-09-06 08:09:52,293 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.3069999218 seconds
+2017-09-06 08:09:52,447 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp1114077ksw, Spend 0.149999856949 seconds
+2017-09-06 08:09:52,453 - root - INFO - FAIL    Unable to click element: <css->input.btn-red.btn-full.xa-login>, Spend 0.0 seconds
+2017-09-06 08:09:55,586 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.12799978256 seconds
+2017-09-06 08:09:55,595 - root - INFO - ############################### END ###############################
+2017-09-06 08:09:59,538 - root - INFO - 发送邮件成功
+2017-09-06 19:26:20,934 - root - INFO - ############################### START ###############################
+2017-09-06 19:26:25,191 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.22699999809 seconds
+2017-09-06 19:26:26,365 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.15899991989 seconds
+2017-09-06 19:26:28,750 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.36800003052 seconds
+2017-09-06 19:26:28,846 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.0889999866486 seconds
+2017-09-06 19:26:30,094 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.24099993706 seconds
+2017-09-06 19:26:30,240 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp1114077ksw, Spend 0.142999887466 seconds
+2017-09-06 19:26:30,246 - root - INFO - FAIL    Unable to click element: <css->input.btn-red.btn-full.xa-login>, Spend 0.0 seconds
+2017-09-06 19:26:33,381 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.13100004196 seconds
+2017-09-06 19:26:33,395 - root - INFO - ############################### END ###############################
+2017-09-06 19:26:38,506 - root - INFO - 发送邮件成功
+2017-09-06 19:34:26,595 - root - INFO - ############################### START ###############################
+2017-09-06 19:34:30,023 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.4279999733 seconds
+2017-09-06 19:34:31,180 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.15799999237 seconds
+2017-09-06 19:34:33,266 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.08400011063 seconds
+2017-09-06 19:34:33,378 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.105000019073 seconds
+2017-09-06 19:34:34,665 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.28299999237 seconds
+2017-09-06 19:34:34,815 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp1114077ksw, Spend 0.144000053406 seconds
+2017-09-06 19:34:34,822 - root - INFO - FAIL    Unable to click element: <css->input.btn-red.btn-full.xa-login>, Spend 0.0 seconds
+2017-09-06 19:34:37,938 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.11199998856 seconds
+2017-09-06 19:34:37,954 - root - INFO - ############################### END ###############################
+2017-09-06 19:34:42,470 - root - INFO - 发送邮件成功
+2017-09-06 19:40:21,125 - root - INFO - ############################### START ###############################
+2017-09-06 19:40:24,607 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.47699999809 seconds
+2017-09-06 19:40:25,780 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.16700005531 seconds
+2017-09-06 19:40:27,937 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.14199995995 seconds
+2017-09-06 19:40:28,059 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.115999937057 seconds
+2017-09-06 19:40:29,335 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.26700019836 seconds
+2017-09-06 19:40:29,486 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp1114077ksw, Spend 0.146000146866 seconds
+2017-09-06 19:40:29,490 - root - INFO - FAIL    Unable to click element: <css->.input.btn-red.btn-full.xa-login>, Spend 0.0 seconds
+2017-09-06 19:40:32,671 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.17499995232 seconds
+2017-09-06 19:40:32,687 - root - INFO - ############################### END ###############################
+2017-09-06 19:40:36,130 - root - INFO - 发送邮件成功
+2017-09-06 20:23:35,055 - root - INFO - ############################### START ###############################
+2017-09-06 20:23:38,513 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.4509999752 seconds
+2017-09-06 20:23:39,642 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.12399983406 seconds
+2017-09-06 20:23:42,440 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.78799986839 seconds
+2017-09-06 20:23:42,532 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.0859999656677 seconds
+2017-09-06 20:23:43,839 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.30199980736 seconds
+2017-09-06 20:23:44,009 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp1114077ksw, Spend 0.164000034332 seconds
+2017-09-06 20:23:58,302 - root - INFO - FAIL    Unable to click element: <css->input.btn-red.btn-full.xa-login>, Spend 0.0 seconds
+2017-09-06 20:24:05,025 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.13800001144 seconds
+2017-09-06 20:24:05,042 - root - INFO - ############################### END ###############################
+2017-09-06 20:24:08,986 - root - INFO - 发送邮件成功
+2017-09-06 20:31:24,654 - root - INFO - ############################### START ###############################
+2017-09-06 20:31:28,112 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.44799995422 seconds
+2017-09-06 20:31:29,276 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.15700006485 seconds
+2017-09-06 20:31:31,219 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 1.93700003624 seconds
+2017-09-06 20:31:31,319 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.095999956131 seconds
+2017-09-06 20:31:32,569 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.24399995804 seconds
+2017-09-06 20:31:32,721 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp1114077ksw, Spend 0.148000001907 seconds
+2017-09-06 20:31:32,726 - root - INFO - FAIL    Unable to click element: <css->div.rlf-group.clearfix>input.btn-red.btn-full.xa-login>, Spend 0.0 seconds
+2017-09-06 20:31:35,924 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.19099998474 seconds
+2017-09-06 20:31:35,940 - root - INFO - ############################### END ###############################
+2017-09-06 20:31:40,880 - root - INFO - 发送邮件成功
+2017-09-06 20:34:24,838 - root - INFO - ############################### START ###############################
+2017-09-06 20:34:28,309 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.46600008011 seconds
+2017-09-06 20:34:29,469 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.15400004387 seconds
+2017-09-06 20:34:31,602 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.12599992752 seconds
+2017-09-06 20:34:31,700 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.0920000076294 seconds
+2017-09-06 20:34:33,036 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.32899999619 seconds
+2017-09-06 20:34:33,193 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp1114077ksw, Spend 0.152000188828 seconds
+2017-09-06 20:36:08,516 - root - INFO - FAIL    Unable to click element: <css->.btn-red.btn-full.xa-login>, Spend 77.2960000038 seconds
+2017-09-06 20:36:24,921 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.16200017929 seconds
+2017-09-06 20:36:24,938 - root - INFO - ############################### END ###############################
+2017-09-06 20:36:28,411 - root - INFO - 发送邮件成功
+2017-09-06 20:38:31,352 - root - INFO - ############################### START ###############################
+2017-09-06 20:38:34,809 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.4509999752 seconds
+2017-09-06 20:38:35,980 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.16300010681 seconds
+2017-09-06 20:38:38,568 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.58200001717 seconds
+2017-09-06 20:38:38,676 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.0950000286102 seconds
+2017-09-06 20:38:40,013 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.33200001717 seconds
+2017-09-06 20:38:40,167 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp1114077ksw, Spend 0.148000001907 seconds
+2017-09-06 20:39:25,052 - root - INFO - ############################### START ###############################
+2017-09-06 20:39:28,483 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.42499995232 seconds
+2017-09-06 20:39:29,631 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.1400001049 seconds
+2017-09-06 20:39:31,640 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 1.99400019646 seconds
+2017-09-06 20:40:20,009 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 48.361000061 seconds
+2017-09-06 20:40:32,158 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 0.287999868393 seconds
+2017-09-06 20:40:33,296 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp1114077ksw, Spend 0.197999954224 seconds
+2017-09-06 20:44:37,220 - root - INFO - ############################### START ###############################
+2017-09-06 20:44:40,667 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.44099998474 seconds
+2017-09-06 20:44:41,799 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.12599992752 seconds
+2017-09-06 20:44:43,778 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 1.97300004959 seconds
+2017-09-06 20:44:43,882 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.095999956131 seconds
+2017-09-06 20:44:45,173 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.28400015831 seconds
+2017-09-06 20:44:45,319 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp1114077ksw, Spend 0.139000177383 seconds
+2017-09-06 20:44:45,450 - root - INFO - SUCCESS     Clicked element: <css->input.btn-red.btn-full.xa-login>, Spend 0.12700009346 seconds
+2017-09-06 20:44:50,479 - root - INFO - SUCCESS     Get current window title, Spend 0.00600004196167 seconds
+2017-09-06 20:44:53,638 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.15300011635 seconds
+2017-09-06 20:44:53,650 - root - INFO - ############################### END ###############################
+2017-09-06 20:44:57,619 - root - INFO - 发送邮件成功
+2017-09-06 20:45:43,558 - root - INFO - ############################### START ###############################
+2017-09-06 20:45:47,019 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.45700001717 seconds
+2017-09-06 20:45:48,167 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.14300012589 seconds
+2017-09-06 20:45:50,982 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.80000019073 seconds
+2017-09-06 20:45:51,084 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.0950000286102 seconds
+2017-09-06 20:45:52,414 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.3259999752 seconds
+2017-09-06 20:45:52,565 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp11104077ksw, Spend 0.144000053406 seconds
+2017-09-06 20:45:52,690 - root - INFO - SUCCESS     Clicked element: <css->input.btn-red.btn-full.xa-login>, Spend 0.116999864578 seconds
+2017-09-06 20:45:57,732 - root - INFO - SUCCESS     Get current window title, Spend 0.0209999084473 seconds
+2017-09-06 20:46:00,898 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.14499998093 seconds
+2017-09-06 20:46:00,905 - root - INFO - ############################### END ###############################
+2017-09-06 20:46:04,335 - root - INFO - 发送邮件成功
+2017-09-06 20:47:29,210 - root - INFO - ############################### START ###############################
+2017-09-06 20:47:32,665 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.4509999752 seconds
+2017-09-06 20:47:33,821 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.14800000191 seconds
+2017-09-06 20:47:36,017 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.18499994278 seconds
+2017-09-06 20:47:36,127 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.101999998093 seconds
+2017-09-06 20:47:37,424 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.29200005531 seconds
+2017-09-06 20:47:37,582 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp11104077ksw, Spend 0.151000022888 seconds
+2017-09-06 20:47:37,586 - root - INFO - FAIL    Unable to click element: <css->input.btn-red.btn-full.xa-login>, Spend 0.0 seconds
+2017-09-06 20:47:40,749 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.15399980545 seconds
+2017-09-06 20:47:40,765 - root - INFO - ############################### END ###############################
+2017-09-06 20:47:45,259 - root - INFO - 发送邮件成功
+2017-09-06 20:55:13,095 - root - INFO - ############################### START ###############################
+2017-09-06 20:55:16,586 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.4849998951 seconds
+2017-09-06 20:55:17,759 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.16700005531 seconds
+2017-09-06 20:55:20,089 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.31299996376 seconds
+2017-09-06 20:55:20,177 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.0829999446869 seconds
+2017-09-06 20:55:21,503 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.31999993324 seconds
+2017-09-06 20:55:21,655 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp11104077ksw, Spend 0.148000001907 seconds
+2017-09-06 20:55:21,661 - root - INFO - FAIL    Unable to click element: <css->input.btn-red.btn-full.xa-login>, Spend 0.0 seconds
+2017-09-06 20:55:24,796 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.12700009346 seconds
+2017-09-06 20:55:24,812 - root - INFO - ############################### END ###############################
+2017-09-06 20:55:28,246 - root - INFO - 发送邮件成功

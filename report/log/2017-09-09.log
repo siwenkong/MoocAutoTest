@@ -1,0 +1,70 @@
+2017-09-09 09:27:59,796 - root - INFO - ############################### START ###############################
+2017-09-09 09:28:04,336 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.52400016785 seconds
+2017-09-09 09:28:05,496 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.15900015831 seconds
+2017-09-09 09:28:07,650 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.13800001144 seconds
+2017-09-09 09:28:07,756 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.0989999771118 seconds
+2017-09-09 09:28:09,043 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.28199982643 seconds
+2017-09-09 09:28:09,201 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp11104077ksw, Spend 0.15299987793 seconds
+2017-09-09 09:28:09,319 - root - INFO - SUCCESS     Clicked element: <css->input.btn-red.btn-full.xa-login>, Spend 0.110999822617 seconds
+2017-09-09 09:28:14,164 - root - INFO - SUCCESS     Clicked element: <link_text->实战>, Spend 1.82400012016 seconds
+2017-09-09 09:28:14,252 - root - INFO - SUCCESS     Clicked element: <css->a.banner-item.l>, Spend 0.0830001831055 seconds
+2017-09-09 09:28:16,483 - root - INFO - SUCCESS     Switch to the new window,new window's url: http://www.imooc.com/topic/list?mc_marking=44a571b35163dae740735a42e32a809d&mc_channel=bdqdkj, Spend 2.22399997711 seconds
+2017-09-09 09:28:16,584 - root - INFO - SUCCESS     Clicked element: <css->a.r.study-btn>, Spend 0.095999956131 seconds
+2017-09-09 09:28:17,621 - root - INFO - SUCCESS     Switch to the new window,new window's url: http://coding.imooc.com/class/107.html, Spend 1.03200006485 seconds
+2017-09-09 09:28:17,720 - root - INFO - SUCCESS     Clicked element: <class->sz-add-shopping-cart>, Spend 0.0950000286102 seconds
+2017-09-09 09:28:17,789 - root - INFO - SUCCESS     Move to element: <class->shop-cart-icon>, Spend 0.0620000362396 seconds
+2017-09-09 09:28:17,900 - root - INFO - SUCCESS     Clicked element: <link_text->去购物车>, Spend 0.105000019073 seconds
+2017-09-09 09:28:18,977 - root - INFO - SUCCESS     Switch to the new window,new window's url: http://order.imooc.com/pay/cart, Spend 1.07299995422 seconds
+2017-09-09 09:28:24,201 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.20299983025 seconds
+2017-09-09 09:28:24,217 - root - INFO - ############################### END ###############################
+2017-09-09 09:28:24,233 - root - INFO - ############################### START ###############################
+2017-09-09 09:28:27,697 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.44799995422 seconds
+2017-09-09 09:28:28,875 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.16300010681 seconds
+2017-09-09 09:28:30,993 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.10199999809 seconds
+2017-09-09 09:28:31,101 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.0999999046326 seconds
+2017-09-09 09:28:32,454 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.34899997711 seconds
+2017-09-09 09:28:32,611 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp11104077ksw, Spend 0.149999856949 seconds
+2017-09-09 09:28:32,736 - root - INFO - SUCCESS     Clicked element: <css->input.btn-red.btn-full.xa-login>, Spend 0.118000030518 seconds
+2017-09-09 09:28:35,826 - root - INFO - SUCCESS     Move to element: <id->header-avator>, Spend 0.0720000267029 seconds
+2017-09-09 09:28:35,986 - root - INFO - SUCCESS     Clicked element: <link_text->个人设置>, Spend 0.153000116348 seconds
+2017-09-09 09:28:37,063 - root - INFO - SUCCESS     Switch to the new window,new window's url: http://www.imooc.com/user/setbindsns, Spend 1.07099986076 seconds
+2017-09-09 09:28:40,204 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.13499999046 seconds
+2017-09-09 09:28:40,220 - root - INFO - ############################### END ###############################
+2017-09-09 09:28:45,157 - root - INFO - 发送邮件成功
+2017-09-09 10:39:01,144 - root - INFO - ############################### START ###############################
+2017-09-09 10:39:04,584 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.4350001812 seconds
+2017-09-09 10:39:05,707 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.117000103 seconds
+2017-09-09 10:39:07,826 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.09899997711 seconds
+2017-09-09 10:39:07,914 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.0829999446869 seconds
+2017-09-09 10:39:09,197 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.27500009537 seconds
+2017-09-09 10:39:09,365 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp11104077ksw, Spend 0.161000013351 seconds
+2017-09-09 10:39:09,486 - root - INFO - SUCCESS     Clicked element: <css->input.btn-red.btn-full.xa-login>, Spend 0.115000009537 seconds
+2017-09-09 10:39:14,339 - root - INFO - SUCCESS     Clicked element: <link_text->实战>, Spend 1.84799981117 seconds
+2017-09-09 10:39:14,446 - root - INFO - SUCCESS     Clicked element: <css->a.banner-item.l>, Spend 0.0980000495911 seconds
+2017-09-09 10:39:15,743 - root - INFO - SUCCESS     Switch to the new window,new window's url: http://www.imooc.com/topic/list?mc_marking=44a571b35163dae740735a42e32a809d&mc_channel=bdqdkj, Spend 1.29200005531 seconds
+2017-09-09 10:39:15,914 - root - INFO - SUCCESS     Clicked element: <css->a.r.study-btn>, Spend 0.164999961853 seconds
+2017-09-09 10:39:16,980 - root - INFO - SUCCESS     Switch to the new window,new window's url: http://coding.imooc.com/class/107.html, Spend 1.0569999218 seconds
+2017-09-09 10:39:17,098 - root - INFO - SUCCESS     Clicked element: <class->sz-add-shopping-cart>, Spend 0.108999967575 seconds
+2017-09-09 10:39:17,155 - root - INFO - SUCCESS     Move to element: <class->shop-cart-icon>, Spend 0.0519998073578 seconds
+2017-09-09 10:39:17,272 - root - INFO - SUCCESS     Clicked element: <link_text->去购物车>, Spend 0.110000133514 seconds
+2017-09-09 10:39:18,336 - root - INFO - SUCCESS     Switch to the new window,new window's url: http://order.imooc.com/pay/cart, Spend 1.05900001526 seconds
+2017-09-09 10:39:23,520 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.17599987984 seconds
+2017-09-09 10:39:23,536 - root - INFO - ############################### END ###############################
+2017-09-09 10:39:23,552 - root - INFO - ############################### START ###############################
+2017-09-09 10:39:26,980 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.41100001335 seconds
+2017-09-09 10:39:28,107 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.11699986458 seconds
+2017-09-09 10:39:30,730 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.60800004005 seconds
+2017-09-09 10:39:30,835 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.0970001220703 seconds
+2017-09-09 10:39:32,148 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.30800008774 seconds
+2017-09-09 10:39:32,323 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp11104077ksw, Spend 0.168999910355 seconds
+2017-09-09 10:39:32,446 - root - INFO - SUCCESS     Clicked element: <css->input.btn-red.btn-full.xa-login>, Spend 0.117000102997 seconds
+2017-09-09 10:39:35,555 - root - INFO - SUCCESS     Move to element: <id->header-avator>, Spend 0.104000091553 seconds
+2017-09-09 10:39:35,674 - root - INFO - SUCCESS     Clicked element: <link_text->个人设置>, Spend 0.112999916077 seconds
+2017-09-09 10:39:36,753 - root - INFO - SUCCESS     Switch to the new window,new window's url: http://www.imooc.com/user/setbindsns, Spend 1.07299995422 seconds
+2017-09-09 10:39:36,808 - root - INFO - SUCCESS     Move to element: <class->avator-img>, Spend 0.047000169754 seconds
+2017-09-09 10:39:36,901 - root - INFO - SUCCESS     Clicked element: <class->js-avator-link>, Spend 0.0889999866486 seconds
+2017-09-09 10:39:37,237 - root - INFO - SUCCESS     Typed element:<id->upload> content: F:/workspace/MoocAutoTesting/data/xiongbenxiogn1.jpg,Spend 0.330999851227 seconds
+2017-09-09 10:39:37,358 - root - INFO - SUCCESS     Clicked element: <link_text->确定>, Spend 0.113000154495 seconds
+2017-09-09 10:39:40,484 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.11999988556 seconds
+2017-09-09 10:39:40,506 - root - INFO - ############################### END ###############################
+2017-09-09 10:39:45,005 - root - INFO - 发送邮件成功

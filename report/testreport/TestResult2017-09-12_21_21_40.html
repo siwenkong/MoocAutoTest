@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>测试报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 500px;
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#result_table td {
+    border: 1px solid #777;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #6c6; }
+.failClass  { background-color: #c60; }
+.errorClass { background-color: #c00; }
+.passCase   { color: #6c6; }
+.failCase   { color: #c60; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+
+<div class='heading'>
+<h1>测试报告</h1>
+<p class='attribute'><strong>Start Time:</strong> 2017-09-12 21:21:40</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:46.865000</p>
+<p class='attribute'><strong>Status:</strong> Pass 1 Error 2</p>
+
+<p class='description'>Test the import testcase</p>
+</div>
+
+
+
+<p id='show_detail_line'>Show
+<a href='javascript:showCase(0)'>Summary</a>
+<a href='javascript:showCase(1)'>Failed</a>
+<a href='javascript:showCase(2)'>All</a>
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td>Test Group/Test case</td>
+    <td>Count</td>
+    <td>Pass</td>
+    <td>Fail</td>
+    <td>Error</td>
+    <td>View</td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_meigu.TestMeigu</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
+</tr>
+
+<tr id='ft1.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_pankou</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        error</a>
+
+    <div id='div_ft1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.1: 2017-09-12 21:21:40,286 - root - INFO - ############################### START ###############################
+No handlers could be found for logger "selenium.webdriver.remote.remote_connection"
+2017-09-12 21:21:43,717 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.42599987984 seconds
+2017-09-12 21:21:44,878 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.14400005341 seconds
+2017-09-12 21:21:45,772 - root - INFO - SUCCESS     Navigated to http://172.16.57.34:8888/?t=696d29e0940a4957748fe3fc9efd22a3,Spend 0.894000053406 seconds
+2017-09-12 21:21:45,842 - root - INFO - SUCCESS     Move to element: &lt;link_text-&gt;å®æ¶æå¡&gt;, Spend 0.0629999637604 seconds
+2017-09-12 21:21:48,897 - root - INFO - FAIL    unable move to element: &lt;link_text-&gt;çå£&gt;, Spend 0.0490000247955 seconds
+Traceback (most recent call last):
+  File "F:\workspace\MoocAutoTesting\testcase\test_meigu.py", line 9, in test_pankou
+    meigupage.click_meigu_pankou_button()
+  File "F:\workspace\MoocAutoTesting\public\pages\meiguPage.py", line 16, in click_meigu_pankou_button
+    self.dr.move_to_element('link_text-&gt;çå£')
+  File "F:\workspace\MoocAutoTesting\public\common\pyselenium.py", line 266, in move_to_element
+    el = self.get_element(css)
+  File "F:\workspace\MoocAutoTesting\public\common\pyselenium.py", line 105, in get_element
+    element = self.driver.find_element_by_link_text(value)
+  File "D:\Python27\lib\site-packages\selenium-3.5.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 378, in find_element_by_link_text
+    return self.find_element(by=By.LINK_TEXT, value=link_text)
+  File "D:\Python27\lib\site-packages\selenium-3.5.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 832, in find_element
+    'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium-3.5.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python27\lib\site-packages\selenium-3.5.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"çå£"}
+  (Session info: chrome=60.0.3112.113)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 10.0.15063 x86_64)
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>test_mooc.TestMoocIndex</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
+</tr>
+
+<tr id='ft2.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_login</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.1')" >
+        error</a>
+
+    <div id='div_ft2.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft2.1: 2017-09-12 21:21:52,035 - root - INFO - ############################### START ###############################
+2017-09-12 21:21:55,437 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.39300012589 seconds
+2017-09-12 21:21:56,562 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.11899995804 seconds
+2017-09-12 21:21:58,535 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 1.96700000763 seconds
+2017-09-12 21:21:58,661 - root - INFO - SUCCESS     Clicked element: &lt;id-&gt;js-signin-btn&gt;, Spend 0.118999958038 seconds
+2017-09-12 21:21:59,977 - root - INFO - SUCCESS     Clear and type element: &lt;name-&gt;email&gt; content: kongsiwen0818@163.com, Spend 1.30999994278 seconds
+2017-09-12 21:22:00,138 - root - INFO - SUCCESS     Clear and type element: &lt;name-&gt;password&gt; content: lkp11104077ksw, Spend 0.155999898911 seconds
+2017-09-12 21:22:00,259 - root - INFO - SUCCESS     Clicked element: &lt;css-&gt;input.btn-red.btn-full.xa-login&gt;, Spend 0.115999937057 seconds
+2017-09-12 21:22:04,752 - root - INFO - SUCCESS     Clicked element: &lt;link_text-&gt;å®æ&gt;, Spend 1.48600006104 seconds
+2017-09-12 21:22:04,865 - root - INFO - SUCCESS     Clicked element: &lt;css-&gt;a.banner-item.l&gt;, Spend 0.105999946594 seconds
+2017-09-12 21:22:06,029 - root - INFO - SUCCESS     Switch to the new window,new window's url: http://www.imooc.com/topic/list?mc_marking=44a571b35163dae740735a42e32a809d&amp;mc_channel=bdqdkj, Spend 1.15500020981 seconds
+2017-09-12 21:22:06,164 - root - INFO - SUCCESS     Clicked element: &lt;css-&gt;a.r.study-btn&gt;, Spend 0.130000114441 seconds
+2017-09-12 21:22:07,240 - root - INFO - SUCCESS     Switch to the new window,new window's url: http://coding.imooc.com/class/107.html, Spend 1.06900000572 seconds
+2017-09-12 21:22:07,332 - root - INFO - SUCCESS     Clicked element: &lt;class-&gt;sz-add-shopping-cart&gt;, Spend 0.0859999656677 seconds
+2017-09-12 21:22:07,382 - root - INFO - SUCCESS     Move to element: &lt;class-&gt;shop-cart-icon&gt;, Spend 0.0449998378754 seconds
+2017-09-12 21:22:07,461 - root - INFO - FAIL    Unable to click element: &lt;link_text-&gt;å»è´­ç©è½¦&gt;, Spend 0.0739998817444 seconds
+Traceback (most recent call last):
+  File "F:\workspace\MoocAutoTesting\testcase\test_mooc.py", line 19, in test_login
+    moocpage.click_sum()
+  File "F:\workspace\MoocAutoTesting\public\pages\moocIndexPage.py", line 57, in click_sum
+    self.dr.click('link_text-&gt;å»è´­ç©è½¦')
+  File "F:\workspace\MoocAutoTesting\public\common\pyselenium.py", line 219, in click
+    el = self.get_element(css)
+  File "F:\workspace\MoocAutoTesting\public\common\pyselenium.py", line 105, in get_element
+    element = self.driver.find_element_by_link_text(value)
+  File "D:\Python27\lib\site-packages\selenium-3.5.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 378, in find_element_by_link_text
+    return self.find_element(by=By.LINK_TEXT, value=link_text)
+  File "D:\Python27\lib\site-packages\selenium-3.5.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 832, in find_element
+    'value': value})['value']
+  File "D:\Python27\lib\site-packages\selenium-3.5.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 297, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python27\lib\site-packages\selenium-3.5.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"å»è´­ç©è½¦"}
+  (Session info: chrome=60.0.3112.113)
+  (Driver info: chromedriver=2.31.488763 (092de99f48a300323ecf8c2a4e2e7cab51de5ba8),platform=Windows NT 10.0.15063 x86_64)
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_personal_setting.TestPersonalSetting</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c3',1)">Detail</a></td>
+</tr>
+
+<tr id='pt3.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_setting</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.1')" >
+        pass</a>
+
+    <div id='div_pt3.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt3.1: 2017-09-12 21:22:10,595 - root - INFO - ############################### START ###############################
+2017-09-12 21:22:14,013 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 3.41299986839 seconds
+2017-09-12 21:22:15,167 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.14800000191 seconds
+2017-09-12 21:22:17,430 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.2460000515 seconds
+2017-09-12 21:22:17,548 - root - INFO - SUCCESS     Clicked element: &lt;id-&gt;js-signin-btn&gt;, Spend 0.109000205994 seconds
+2017-09-12 21:22:18,891 - root - INFO - SUCCESS     Clear and type element: &lt;name-&gt;email&gt; content: kongsiwen0818@163.com, Spend 1.33700013161 seconds
+2017-09-12 21:22:19,055 - root - INFO - SUCCESS     Clear and type element: &lt;name-&gt;password&gt; content: lkp11104077ksw, Spend 0.158999919891 seconds
+2017-09-12 21:22:19,176 - root - INFO - SUCCESS     Clicked element: &lt;css-&gt;input.btn-red.btn-full.xa-login&gt;, Spend 0.113000154495 seconds
+2017-09-12 21:22:22,263 - root - INFO - SUCCESS     Move to element: &lt;id-&gt;header-avator&gt;, Spend 0.0810000896454 seconds
+2017-09-12 21:22:22,369 - root - INFO - SUCCESS     Clicked element: &lt;link_text-&gt;ä¸ªäººè®¾ç½®&gt;, Spend 0.100999832153 seconds
+2017-09-12 21:22:23,437 - root - INFO - SUCCESS     Switch to the new window,new window's url: http://www.imooc.com/user/setbindsns, Spend 1.06200003624 seconds
+2017-09-12 21:22:23,500 - root - INFO - SUCCESS     Move to element: &lt;class-&gt;avator-img&gt;, Spend 0.0550000667572 seconds
+2017-09-12 21:22:23,615 - root - INFO - SUCCESS     Clicked element: &lt;class-&gt;js-avator-link&gt;, Spend 0.109999895096 seconds
+2017-09-12 21:22:23,869 - root - INFO - SUCCESS     Typed element:&lt;id-&gt;upload&gt; content: F:/workspace/MoocAutoTesting/data/xiongbenxiogn1.jpg,Spend 0.248999834061 seconds
+2017-09-12 21:22:24,000 - root - INFO - SUCCESS     Clicked element: &lt;link_text-&gt;ç¡®å®&gt;, Spend 0.123999834061 seconds
+2017-09-12 21:22:27,121 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.11499977112 seconds
+2017-09-12 21:22:27,137 - root - INFO - ############################### END ###############################
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='total_row'>
+    <td>Total</td>
+    <td>3</td>
+    <td>1</td>
+    <td>0</td>
+    <td>2</td>
+    <td>&nbsp;</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+
+</body>
+</html>
