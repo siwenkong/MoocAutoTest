@@ -3,7 +3,7 @@ import time
 from public.common import basepage
 import re
 import urllib
-import urllib2
+import urllib3
 import json
 
 class MeiguPage(basepage.Page):
@@ -50,18 +50,18 @@ class MeiguPage(basepage.Page):
     def read_latest_price_from_http(self):
         """"读取http返回的股票代码和最新价"""
         url = "http://183.136.163.9/quote/ussIndex?code=AAPL.O&index=8042"
-        url_request = urllib2.urlopen(url)
+        url_request = urllib.request.urlopen(url)
         buffer = url_request.read()
-        print buffer
+        print(buffer)
         stockData = json.loads(buffer)
-        print stockData.keys()
+        print(stockData.keys())
         list = stockData["result"]["list"]
-        print list
+        print(list)
         stockMsg = list[0]
         stockCode = stockMsg["code"]
-        print stockCode
+        print(stockCode)
         stockPrice = stockMsg["value"][0]
-        print "stockPrice" + str(stockPrice)
+        print("stockPrice" + str(stockPrice))
         # if stockCode == "Null" or stockPrice == "Null":
         #     print "Error"
         # else:

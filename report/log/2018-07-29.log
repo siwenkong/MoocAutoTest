@@ -1,0 +1,221 @@
+2018-07-29 09:07:19,300 - root - INFO - ############################### START ###############################
+2018-07-29 09:07:24,216 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.90825080871582 seconds
+2018-07-29 09:07:26,341 - root - INFO - ############################### START ###############################
+2018-07-29 09:07:30,846 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.499135255813599 seconds
+2018-07-29 09:09:30,316 - root - INFO - ############################### START ###############################
+2018-07-29 09:09:34,761 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.4411845207214355 seconds
+2018-07-29 09:09:36,778 - root - INFO - ############################### START ###############################
+2018-07-29 09:09:41,316 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.527585744857788 seconds
+2018-07-29 09:09:50,754 - root - INFO - 发送邮件成功
+2018-07-29 09:13:26,854 - root - INFO - ############################### START ###############################
+2018-07-29 09:13:31,364 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.5055251121521 seconds
+2018-07-29 09:13:33,389 - root - INFO - ############################### START ###############################
+2018-07-29 09:13:37,843 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.440166711807251 seconds
+2018-07-29 09:13:39,865 - root - INFO - ############################### START ###############################
+2018-07-29 09:13:44,359 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.479660272598267 seconds
+2018-07-29 09:13:50,959 - root - INFO - 发送邮件成功
+2018-07-29 09:15:11,783 - root - INFO - ############################### START ###############################
+2018-07-29 09:15:16,232 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.443778038024902 seconds
+2018-07-29 09:25:26,650 - root - INFO - ############################### START ###############################
+2018-07-29 09:25:31,462 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.806089878082275 seconds
+2018-07-29 09:25:32,583 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.1156418323516846 seconds
+2018-07-29 09:25:53,787 - root - INFO - SUCCESS     Navigated to http://172.16.57.34:8888/?t=696d29e0940a4957748fe3fc9efd22a3,Spend 21.199001789093018 seconds
+2018-07-29 09:25:53,821 - root - INFO - FAIL    unable move to element: <link_text->实时服务>, Spend 0.025027751922607422 seconds
+2018-07-29 09:25:56,945 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.1160359382629395 seconds
+2018-07-29 09:25:56,956 - root - INFO - ############################### END ###############################
+2018-07-29 09:26:12,481 - root - INFO - ############################### START ###############################
+2018-07-29 09:26:16,995 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.508609294891357 seconds
+2018-07-29 09:26:18,117 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.115485429763794 seconds
+2018-07-29 09:26:22,067 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 3.94437837600708 seconds
+2018-07-29 09:26:22,256 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.17311811447143555 seconds
+2018-07-29 09:26:24,038 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.7761144638061523 seconds
+2018-07-29 09:26:24,200 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp11104077ksw, Spend 0.15512585639953613 seconds
+2018-07-29 09:26:24,223 - root - INFO - FAIL    Unable to click element: <css->input.btn-red.btn-full.xa-login>, Spend 0.017013072967529297 seconds
+2018-07-29 09:26:27,368 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.139805793762207 seconds
+2018-07-29 09:26:27,384 - root - INFO - ############################### END ###############################
+2018-07-29 09:31:28,454 - root - INFO - ############################### START ###############################
+2018-07-29 09:31:32,931 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.471855163574219 seconds
+2018-07-29 09:31:34,085 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.1466925144195557 seconds
+2018-07-29 09:31:36,475 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.3843228816986084 seconds
+2018-07-29 09:31:36,594 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.11407327651977539 seconds
+2018-07-29 09:31:37,833 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.2335224151611328 seconds
+2018-07-29 09:31:37,963 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp11104077ksw, Spend 0.12408828735351562 seconds
+2018-07-29 09:31:37,985 - root - INFO - FAIL    Unable to click element: <class->moco-btn moco-btn-red moco-btn-lg btn-full xa-login>, Spend 0.015011072158813477 seconds
+2018-07-29 09:31:41,133 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.142456531524658 seconds
+2018-07-29 09:31:41,150 - root - INFO - ############################### END ###############################
+2018-07-29 09:34:01,487 - root - INFO - ############################### START ###############################
+2018-07-29 09:34:06,010 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.515964031219482 seconds
+2018-07-29 09:34:07,151 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.1346635818481445 seconds
+2018-07-29 09:34:10,086 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.920224189758301 seconds
+2018-07-29 09:34:10,210 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.11806893348693848 seconds
+2018-07-29 09:34:11,465 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.2487120628356934 seconds
+2018-07-29 09:34:11,619 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp11104077ksw, Spend 0.1410996913909912 seconds
+2018-07-29 09:34:11,721 - root - INFO - SUCCESS     Clicked element: <class->moco-btn-lg>, Spend 0.0960683822631836 seconds
+2018-07-29 09:34:16,740 - root - INFO - SUCCESS     Clicked element: <link_text->实战>, Spend 2.0118582248687744 seconds
+2018-07-29 09:34:16,791 - root - INFO - FAIL    Unable to click element: <css->a.banner-item.l>, Spend 0.03002452850341797 seconds
+2018-07-29 09:34:19,978 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.1767570972442627 seconds
+2018-07-29 09:34:19,995 - root - INFO - ############################### END ###############################
+2018-07-29 16:55:14,395 - root - INFO - ############################### START ###############################
+2018-07-29 16:55:20,123 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 5.670242547988892 seconds
+2018-07-29 16:55:21,282 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.1531262397766113 seconds
+2018-07-29 16:55:23,584 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.2946555614471436 seconds
+2018-07-29 16:55:23,713 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.12408828735351562 seconds
+2018-07-29 16:55:25,110 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.3891704082489014 seconds
+2018-07-29 16:55:25,246 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp11104077ksw, Spend 0.12907791137695312 seconds
+2018-07-29 16:55:25,354 - root - INFO - SUCCESS     Clicked element: <class->moco-btn-lg>, Spend 0.10007333755493164 seconds
+2018-07-29 16:55:30,755 - root - INFO - SUCCESS     Clicked element: <link_text->实战>, Spend 2.3941330909729004 seconds
+2018-07-29 16:55:33,940 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.1779751777648926 seconds
+2018-07-29 16:55:33,961 - root - INFO - ############################### END ###############################
+2018-07-29 16:58:55,356 - root - INFO - ############################### START ###############################
+2018-07-29 16:58:59,839 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.476261138916016 seconds
+2018-07-29 16:59:00,963 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.1196589469909668 seconds
+2018-07-29 16:59:03,271 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.302964925765991 seconds
+2018-07-29 16:59:03,417 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.14010095596313477 seconds
+2018-07-29 16:59:04,697 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.2736940383911133 seconds
+2018-07-29 16:59:04,832 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp11104077ksw, Spend 0.12909150123596191 seconds
+2018-07-29 16:59:04,943 - root - INFO - SUCCESS     Clicked element: <class->moco-btn-lg>, Spend 0.10511231422424316 seconds
+2018-07-29 16:59:10,004 - root - INFO - SUCCESS     Clicked element: <link_text->实战>, Spend 2.054222583770752 seconds
+2018-07-29 16:59:11,593 - root - INFO - SUCCESS     Clicked element: <link_text->前端开发>, Spend 1.582834005355835 seconds
+2018-07-29 16:59:16,662 - root - INFO - SUCCESS     Switch to the new window,new window's url: https://coding.imooc.com/?c=fe, Spend 5.053442478179932 seconds
+2018-07-29 16:59:19,627 - root - INFO - SUCCESS     Clicked element: <class->shizhan-course-wrap>, Spend 2.958523750305176 seconds
+2018-07-29 16:59:24,659 - root - INFO - SUCCESS     Switch to the new window,new window's url: https://coding.imooc.com/class/251.html, Spend 5.0273215770721436 seconds
+2018-07-29 16:59:24,719 - root - INFO - FAIL    Unable to click element: <class->sz-add-shopping-cart>, Spend 0.05304884910583496 seconds
+2018-07-29 16:59:27,895 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.1675188541412354 seconds
+2018-07-29 16:59:27,912 - root - INFO - ############################### END ###############################
+2018-07-29 17:04:08,341 - root - INFO - ############################### START ###############################
+2018-07-29 17:04:12,844 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.498858451843262 seconds
+2018-07-29 17:04:13,975 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.1241226196289062 seconds
+2018-07-29 17:04:16,351 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.356593132019043 seconds
+2018-07-29 17:04:16,484 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.12107563018798828 seconds
+2018-07-29 17:04:17,745 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.2546627521514893 seconds
+2018-07-29 17:04:17,885 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp11104077ksw, Spend 0.13509607315063477 seconds
+2018-07-29 17:04:17,990 - root - INFO - SUCCESS     Clicked element: <class->moco-btn-lg>, Spend 0.09907174110412598 seconds
+2018-07-29 17:04:22,979 - root - INFO - SUCCESS     Clicked element: <link_text->实战>, Spend 1.980820894241333 seconds
+2018-07-29 17:04:25,015 - root - INFO - SUCCESS     Clicked element: <link_text->前端开发>, Spend 2.0236189365386963 seconds
+2018-07-29 17:04:30,062 - root - INFO - SUCCESS     Switch to the new window,new window's url: https://coding.imooc.com/?c=fe, Spend 5.04091215133667 seconds
+2018-07-29 17:04:31,885 - root - INFO - SUCCESS     Clicked element: <class->shizhan-course-wrap>, Spend 1.8061232566833496 seconds
+2018-07-29 17:04:36,937 - root - INFO - SUCCESS     Switch to the new window,new window's url: https://coding.imooc.com/class/251.html, Spend 5.043902635574341 seconds
+2018-07-29 17:04:37,045 - root - INFO - SUCCESS     Clicked element: <class->js-addcart>, Spend 0.08906316757202148 seconds
+2018-07-29 17:04:37,091 - root - INFO - SUCCESS     Move to element: <class->shop-cart-icon>, Spend 0.040042877197265625 seconds
+2018-07-29 17:04:37,195 - root - INFO - SUCCESS     Clicked element: <link_text->去购物车>, Spend 0.09605574607849121 seconds
+2018-07-29 17:04:38,220 - root - INFO - SUCCESS     Switch to the new window,new window's url: http://order.imooc.com/pay/cart, Spend 1.018913745880127 seconds
+2018-07-29 17:04:43,448 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.2202978134155273 seconds
+2018-07-29 17:04:43,465 - root - INFO - ############################### END ###############################
+2018-07-29 17:05:41,178 - root - INFO - ############################### START ###############################
+2018-07-29 17:05:45,630 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.447147846221924 seconds
+2018-07-29 17:05:46,790 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.1544322967529297 seconds
+2018-07-29 17:05:49,476 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.6797585487365723 seconds
+2018-07-29 17:05:49,656 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.16411399841308594 seconds
+2018-07-29 17:05:50,991 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.3279938697814941 seconds
+2018-07-29 17:05:51,124 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp11104077ksw, Spend 0.1250908374786377 seconds
+2018-07-29 17:05:51,147 - root - INFO - FAIL    Unable to click element: <css->input.btn-red.btn-full.xa-login>, Spend 0.016011714935302734 seconds
+2018-07-29 17:05:54,292 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.139249801635742 seconds
+2018-07-29 17:05:54,309 - root - INFO - ############################### END ###############################
+2018-07-29 17:08:14,215 - root - INFO - ############################### START ###############################
+2018-07-29 17:08:18,717 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.494431495666504 seconds
+2018-07-29 17:08:19,864 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.1421022415161133 seconds
+2018-07-29 17:08:22,193 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 2.309931993484497 seconds
+2018-07-29 17:08:22,326 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.1270768642425537 seconds
+2018-07-29 17:08:23,613 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.2812390327453613 seconds
+2018-07-29 17:08:23,745 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp11104077ksw, Spend 0.12508940696716309 seconds
+2018-07-29 17:08:23,848 - root - INFO - SUCCESS     Clicked element: <class->moco-btn-lg>, Spend 0.09706783294677734 seconds
+2018-07-29 17:08:26,931 - root - INFO - SUCCESS     Move to element: <id->header-avator>, Spend 0.07502508163452148 seconds
+2018-07-29 17:08:27,070 - root - INFO - SUCCESS     Clicked element: <link_text->个人设置>, Spend 0.1290895938873291 seconds
+2018-07-29 17:08:28,107 - root - INFO - SUCCESS     Switch to the new window,new window's url: https://www.imooc.com/user/setbindsns, Spend 1.0309855937957764 seconds
+2018-07-29 17:08:28,148 - root - INFO - SUCCESS     Move to element: <class->avator-img>, Spend 0.0310211181640625 seconds
+2018-07-29 17:08:28,234 - root - INFO - SUCCESS     Clicked element: <class->js-avator-link>, Spend 0.08005762100219727 seconds
+2018-07-29 17:08:28,993 - root - INFO - SUCCESS     Typed element:<id->upload> content: F:/workspace/MoocAutoTest/data/xiongbenxiogn1.jpg,Spend 0.7525458335876465 seconds
+2018-07-29 17:08:29,095 - root - INFO - SUCCESS     Clicked element: <link_text->确定>, Spend 0.09306454658508301 seconds
+2018-07-29 17:08:32,255 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.154019594192505 seconds
+2018-07-29 17:08:32,274 - root - INFO - ############################### END ###############################
+2018-07-29 17:11:10,416 - root - INFO - ############################### START ###############################
+2018-07-29 17:11:14,933 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.503126859664917 seconds
+2018-07-29 17:11:16,090 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.1510889530181885 seconds
+2018-07-29 17:11:17,176 - root - INFO - SUCCESS     Navigated to http://172.16.57.34:8888/?t=696d29e0940a4957748fe3fc9efd22a3,Spend 1.068885326385498 seconds
+2018-07-29 17:11:17,283 - root - INFO - SUCCESS     Move to element: <link_text->实时服务>, Spend 0.09907031059265137 seconds
+2018-07-29 17:11:20,346 - root - INFO - SUCCESS     Move to element: <link_text->盘口>, Spend 0.054021358489990234 seconds
+2018-07-29 17:11:23,463 - root - INFO - SUCCESS     Clicked element: <link_text->美股>, Spend 0.11008238792419434 seconds
+2018-07-29 17:11:23,779 - root - INFO - SUCCESS     Clear and type element: <id->param> content: server=183.136.163.57:1818 ;requestId=17176 ;emcode=AAPL.O, Spend 0.30921483039855957 seconds
+2018-07-29 17:11:23,916 - root - INFO - SUCCESS     Clicked element: <link_text->提交>, Spend 0.12909197807312012 seconds
+2018-07-29 17:11:27,022 - root - INFO - HZ Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=0, time=80000, price=190.98, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=24023972, high=195.19, low=190.1, open=194.99, waiPan=17966190, neiPan=6057853, avgVol5=1.825915E7, avg=192.223, parentnetprofit=3.38870006E10, netprofittb=0.1718, pclose=194.21, totalCapital=4915138000, epsqmtb=10.847712, bps=25.81372, roepj=0.25974515, dividendPerShare=1.26} meigu pankou shuju 
+2018-07-29 17:11:27,033 - root - INFO - securityId=1000199555, push=0, time=80000, price=190.98, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=24023972, high=195.19, low=190.1, open=194.99, waiPan=17966190, neiPan=6057853, avgVol5=1.825915E7, avg=192.223, parentnetprofit=3.38870006E10, netprofittb=0.1718, pclose=194.21, totalCapital=4915138000, epsqmtb=10.847712, bps=25.81372, roepj=0.25974515, dividendPerShare=1.26 
+2018-07-29 17:11:27,044 - root - INFO - 194.99 meigu latest price 
+2018-07-29 17:11:30,192 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.1377294063568115 seconds
+2018-07-29 17:11:30,210 - root - INFO - ############################### END ###############################
+2018-07-29 17:13:35,460 - root - INFO - ############################### START ###############################
+2018-07-29 17:13:39,923 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.4546959400177 seconds
+2018-07-29 17:13:41,078 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.148906946182251 seconds
+2018-07-29 17:13:41,942 - root - INFO - SUCCESS     Navigated to http://172.16.57.34:8888/?t=696d29e0940a4957748fe3fc9efd22a3,Spend 0.8436264991760254 seconds
+2018-07-29 17:13:42,047 - root - INFO - SUCCESS     Move to element: <link_text->实时服务>, Spend 0.09406471252441406 seconds
+2018-07-29 17:13:45,121 - root - INFO - SUCCESS     Move to element: <link_text->盘口>, Spend 0.06600809097290039 seconds
+2018-07-29 17:13:48,315 - root - INFO - SUCCESS     Clicked element: <link_text->美股>, Spend 0.18712687492370605 seconds
+2018-07-29 17:13:48,619 - root - INFO - SUCCESS     Clear and type element: <id->param> content: server=183.136.163.57:1818 ;requestId=17176 ;emcode=AAPL.O, Spend 0.29620838165283203 seconds
+2018-07-29 17:13:48,752 - root - INFO - SUCCESS     Clicked element: <link_text->提交>, Spend 0.12608909606933594 seconds
+2018-07-29 17:13:51,847 - root - INFO - HZ Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=0, time=80000, price=190.98, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=24023972, high=195.19, low=190.1, open=194.99, waiPan=17966190, neiPan=6057853, avgVol5=1.825915E7, avg=192.223, parentnetprofit=3.38870006E10, netprofittb=0.1718, pclose=194.21, totalCapital=4915138000, epsqmtb=10.847712, bps=25.81372, roepj=0.25974515, dividendPerShare=1.26} meigu pankou shuju 
+2018-07-29 17:13:51,856 - root - INFO - securityId=1000199555, push=0, time=80000, price=190.98, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=24023972, high=195.19, low=190.1, open=194.99, waiPan=17966190, neiPan=6057853, avgVol5=1.825915E7, avg=192.223, parentnetprofit=3.38870006E10, netprofittb=0.1718, pclose=194.21, totalCapital=4915138000, epsqmtb=10.847712, bps=25.81372, roepj=0.25974515, dividendPerShare=1.26 
+2018-07-29 17:13:51,862 - root - INFO - 194.99 meigu latest price 
+2018-07-29 17:13:51,914 - root - INFO - http leasted price 194.99
+2018-07-29 17:13:51,920 - root - INFO - ===============
+2018-07-29 17:13:51,926 - root - INFO - service test get the price194.99 is equal to http 194.99latest price 
+2018-07-29 17:13:55,048 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.115555763244629 seconds
+2018-07-29 17:13:55,066 - root - INFO - ############################### END ###############################
+2018-07-29 17:14:26,850 - root - INFO - ############################### START ###############################
+2018-07-29 17:14:31,360 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.504749774932861 seconds
+2018-07-29 17:14:32,539 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.171844482421875 seconds
+2018-07-29 17:14:33,404 - root - INFO - SUCCESS     Navigated to http://172.16.57.34:8888/?t=696d29e0940a4957748fe3fc9efd22a3,Spend 0.8445980548858643 seconds
+2018-07-29 17:14:33,488 - root - INFO - SUCCESS     Move to element: <link_text->实时服务>, Spend 0.07605338096618652 seconds
+2018-07-29 17:14:36,619 - root - INFO - SUCCESS     Move to element: <link_text->盘口>, Spend 0.12209820747375488 seconds
+2018-07-29 17:14:39,823 - root - INFO - SUCCESS     Clicked element: <link_text->美股>, Spend 0.1911320686340332 seconds
+2018-07-29 17:14:40,113 - root - INFO - SUCCESS     Clear and type element: <id->param> content: server=183.136.163.57:1818 ;requestId=17176 ;emcode=AAPL.O, Spend 0.2801978588104248 seconds
+2018-07-29 17:14:40,248 - root - INFO - SUCCESS     Clicked element: <link_text->提交>, Spend 0.12809109687805176 seconds
+2018-07-29 17:14:43,356 - root - INFO - HZ Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=0, time=80000, price=190.98, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=24023972, high=195.19, low=190.1, open=194.99, waiPan=17966190, neiPan=6057853, avgVol5=1.825915E7, avg=192.223, parentnetprofit=3.38870006E10, netprofittb=0.1718, pclose=194.21, totalCapital=4915138000, epsqmtb=10.847712, bps=25.81372, roepj=0.25974515, dividendPerShare=1.26} meigu pankou shuju 
+2018-07-29 17:14:43,369 - root - INFO - securityId=1000199555, push=0, time=80000, price=190.98, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=24023972, high=195.19, low=190.1, open=194.99, waiPan=17966190, neiPan=6057853, avgVol5=1.825915E7, avg=192.223, parentnetprofit=3.38870006E10, netprofittb=0.1718, pclose=194.21, totalCapital=4915138000, epsqmtb=10.847712, bps=25.81372, roepj=0.25974515, dividendPerShare=1.26 
+2018-07-29 17:14:43,379 - root - INFO - 194.99 meigu latest price 
+2018-07-29 17:14:43,428 - root - INFO - http leasted price 194.99
+2018-07-29 17:14:43,445 - root - INFO - ===============
+2018-07-29 17:14:43,458 - root - INFO - service test get the price194.99 is equal to http 194.99latest price 
+2018-07-29 17:14:46,602 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.1323604583740234 seconds
+2018-07-29 17:14:46,619 - root - INFO - ############################### END ###############################
+2018-07-29 17:14:46,635 - root - INFO - ############################### START ###############################
+2018-07-29 17:14:51,144 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.492940902709961 seconds
+2018-07-29 17:14:52,297 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.146866798400879 seconds
+2018-07-29 17:14:55,762 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 3.4474456310272217 seconds
+2018-07-29 17:14:55,899 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.13109135627746582 seconds
+2018-07-29 17:14:57,198 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.2929847240447998 seconds
+2018-07-29 17:14:57,330 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp11104077ksw, Spend 0.1270895004272461 seconds
+2018-07-29 17:14:57,438 - root - INFO - SUCCESS     Clicked element: <class->moco-btn-lg>, Spend 0.10106849670410156 seconds
+2018-07-29 17:15:02,533 - root - INFO - SUCCESS     Clicked element: <link_text->实战>, Spend 2.088568687438965 seconds
+2018-07-29 17:15:03,691 - root - INFO - SUCCESS     Clicked element: <link_text->前端开发>, Spend 1.1387755870819092 seconds
+2018-07-29 17:15:08,733 - root - INFO - SUCCESS     Switch to the new window,new window's url: https://coding.imooc.com/?c=fe, Spend 5.035948038101196 seconds
+2018-07-29 17:15:10,530 - root - INFO - SUCCESS     Clicked element: <class->shizhan-course-wrap>, Spend 1.7792279720306396 seconds
+2018-07-29 17:15:15,573 - root - INFO - SUCCESS     Switch to the new window,new window's url: https://coding.imooc.com/class/251.html, Spend 5.036738395690918 seconds
+2018-07-29 17:15:15,656 - root - INFO - SUCCESS     Clicked element: <class->js-addcart>, Spend 0.07304048538208008 seconds
+2018-07-29 17:15:15,703 - root - INFO - SUCCESS     Move to element: <class->shop-cart-icon>, Spend 0.041028738021850586 seconds
+2018-07-29 17:15:15,805 - root - INFO - SUCCESS     Clicked element: <link_text->去购物车>, Spend 0.09705519676208496 seconds
+2018-07-29 17:15:16,830 - root - INFO - SUCCESS     Switch to the new window,new window's url: http://order.imooc.com/pay/cart, Spend 1.019970178604126 seconds
+2018-07-29 17:15:22,078 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.239936351776123 seconds
+2018-07-29 17:15:22,095 - root - INFO - ############################### END ###############################
+2018-07-29 17:15:22,112 - root - INFO - ############################### START ###############################
+2018-07-29 17:15:26,546 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.417669296264648 seconds
+2018-07-29 17:15:27,703 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.1518173217773438 seconds
+2018-07-29 17:15:31,933 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 4.211095809936523 seconds
+2018-07-29 17:15:32,114 - root - INFO - SUCCESS     Clicked element: <id->js-signin-btn>, Spend 0.17011523246765137 seconds
+2018-07-29 17:15:33,458 - root - INFO - SUCCESS     Clear and type element: <name->email> content: kongsiwen0818@163.com, Spend 1.3380529880523682 seconds
+2018-07-29 17:15:33,591 - root - INFO - SUCCESS     Clear and type element: <name->password> content: lkp11104077ksw, Spend 0.12508773803710938 seconds
+2018-07-29 17:15:33,702 - root - INFO - SUCCESS     Clicked element: <class->moco-btn-lg>, Spend 0.10606265068054199 seconds
+2018-07-29 17:15:36,800 - root - INFO - SUCCESS     Move to element: <id->header-avator>, Spend 0.0890650749206543 seconds
+2018-07-29 17:15:36,938 - root - INFO - SUCCESS     Clicked element: <link_text->个人设置>, Spend 0.13209128379821777 seconds
+2018-07-29 17:15:37,965 - root - INFO - SUCCESS     Switch to the new window,new window's url: https://www.imooc.com/user/setbindsns, Spend 1.0217101573944092 seconds
+2018-07-29 17:15:38,000 - root - INFO - SUCCESS     Move to element: <class->avator-img>, Spend 0.030022144317626953 seconds
+2018-07-29 17:15:38,082 - root - INFO - SUCCESS     Clicked element: <class->js-avator-link>, Spend 0.07505416870117188 seconds
+2018-07-29 17:15:38,352 - root - INFO - SUCCESS     Typed element:<id->upload> content: F:/workspace/MoocAutoTest/data/xiongbenxiogn1.jpg,Spend 0.26318836212158203 seconds
+2018-07-29 17:15:38,522 - root - INFO - SUCCESS     Clicked element: <link_text->确定>, Spend 0.15210795402526855 seconds
+2018-07-29 17:15:41,681 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.151533365249634 seconds
+2018-07-29 17:15:41,686 - root - INFO - ############################### END ###############################
+2018-07-29 17:15:45,969 - root - INFO - 发送邮件成功

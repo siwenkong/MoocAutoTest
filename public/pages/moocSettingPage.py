@@ -22,7 +22,8 @@ class MoocSettingPage(basepage.Page):
 
     def click_login(self):
         """"点击登陆按钮"""
-        self.dr.click('css->input.btn-red.btn-full.xa-login')
+        self.dr.click('class->moco-btn-lg')
+        # self.dr.click('css->input.btn-red.btn-full.xa-login')
         # self.dr.click('class->btn-red')
         time.sleep(3)
 
@@ -39,6 +40,6 @@ class MoocSettingPage(basepage.Page):
         """"更换头像"""
         self.dr.move_to_element('class->avator-img')
         self.dr.click('class->js-avator-link')
-        filePath = "F:/workspace/MoocAutoTesting/data/xiongbenxiogn1.jpg"
+        filePath = "F:/workspace/MoocAutoTest/data/xiongbenxiogn1.jpg"
         self.dr.type('id->upload', filePath)
         self.dr.click('link_text->确定')

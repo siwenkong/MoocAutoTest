@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Test Result</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         {}
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 500px;
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#result_table td {
+    border: 1px solid #777;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #6c6; }
+.failClass  { background-color: #c60; }
+.errorClass { background-color: #c00; }
+.passCase   { color: #6c6; }
+.failCase   { color: #c60; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+
+<div class='heading'>
+<h1 style="color:blue">测试报告</h1>
+<p class='attribute'><strong>Start Time:</strong> 2018-07-29 17:14:26</p>
+<p class='attribute'><strong>Duration:</strong> 0:01:14.841343</p>
+<p class='attribute'><strong>Status:</strong> Pass:3 </p>
+
+<p class='description'>Test the import testcase</p>
+</div>
+
+
+
+<p id='show_detail_line'>Show:
+<a href='javascript:showCase(0)'>Summary</a>
+<a href='javascript:showCase(1)'>Failed</a>
+<a href='javascript:showCase(2)'>All</a>
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td>Test Group/Test case</td>
+    <td>Count</td>
+    <td>Pass</td>
+    <td>Fail</td>
+    <td>Error</td>
+    <td>View</td>
+    <td>Screenshot</td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_meigu.TestMeigu</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
+    <td></td>
+</tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_pankou</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        pass</a>
+
+    <div id='div_pt1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.1: 2018-07-29 17:14:26,850 - root - INFO - ############################### START ###############################
+2018-07-29 17:14:31,360 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.504749774932861 seconds
+2018-07-29 17:14:32,539 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.171844482421875 seconds
+2018-07-29 17:14:33,404 - root - INFO - SUCCESS     Navigated to http://172.16.57.34:8888/?t=696d29e0940a4957748fe3fc9efd22a3,Spend 0.8445980548858643 seconds
+2018-07-29 17:14:33,488 - root - INFO - SUCCESS     Move to element: &lt;link_text-&gt;实时服务&gt;, Spend 0.07605338096618652 seconds
+2018-07-29 17:14:36,619 - root - INFO - SUCCESS     Move to element: &lt;link_text-&gt;盘口&gt;, Spend 0.12209820747375488 seconds
+2018-07-29 17:14:39,823 - root - INFO - SUCCESS     Clicked element: &lt;link_text-&gt;美股&gt;, Spend 0.1911320686340332 seconds
+2018-07-29 17:14:40,113 - root - INFO - SUCCESS     Clear and type element: &lt;id-&gt;param&gt; content: server=183.136.163.57:1818 ;requestId=17176 ;emcode=AAPL.O, Spend 0.2801978588104248 seconds
+2018-07-29 17:14:40,248 - root - INFO - SUCCESS     Clicked element: &lt;link_text-&gt;提交&gt;, Spend 0.12809109687805176 seconds
+2018-07-29 17:14:43,356 - root - INFO - HZ Host: 183.136.163.57 Port: 1818
+################################################################################################
+{securityId=1000199555, push=0, time=80000, price=190.98, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=24023972, high=195.19, low=190.1, open=194.99, waiPan=17966190, neiPan=6057853, avgVol5=1.825915E7, avg=192.223, parentnetprofit=3.38870006E10, netprofittb=0.1718, pclose=194.21, totalCapital=4915138000, epsqmtb=10.847712, bps=25.81372, roepj=0.25974515, dividendPerShare=1.26} meigu pankou shuju 
+2018-07-29 17:14:43,369 - root - INFO - securityId=1000199555, push=0, time=80000, price=190.98, buyPrice1=0.0, buyPrice2=0.0, buyPrice3=0.0, buyPrice4=0.0, buyPrice5=0.0, sellPrice1=0.0, sellPrice2=0.0, sellPrice3=0.0, sellPrice4=0.0, sellPrice5=0.0, buyVol1=0, buyVol2=0, buyVol3=0, buyVol4=0, buyVol5=0, sellVol1=0, sellVol2=0, sellVol3=0, sellVol4=0, sellVol5=0, volume=24023972, high=195.19, low=190.1, open=194.99, waiPan=17966190, neiPan=6057853, avgVol5=1.825915E7, avg=192.223, parentnetprofit=3.38870006E10, netprofittb=0.1718, pclose=194.21, totalCapital=4915138000, epsqmtb=10.847712, bps=25.81372, roepj=0.25974515, dividendPerShare=1.26 
+2018-07-29 17:14:43,379 - root - INFO - 194.99 meigu latest price 
+b'{"desc":"sucess","isResult":"true","result":{"index":[8042],"list":[{"code":"AAPL.O","value":[194.99]}],"pages":1,"pno":1,"psize":3000,"total":1}}'
+dict_keys(['desc', 'isResult', 'result'])
+[{'code': 'AAPL.O', 'value': [194.99]}]
+AAPL.O
+stockPrice194.99
+2018-07-29 17:14:43,428 - root - INFO - http leasted price 194.99
+2018-07-29 17:14:43,445 - root - INFO - ===============
+2018-07-29 17:14:43,458 - root - INFO - service test get the price194.99 is equal to http 194.99latest price 
+2018-07-29 17:14:46,602 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.1323604583740234 seconds
+2018-07-29 17:14:46,619 - root - INFO - ############################### END ###############################
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td align='center'>
+    <a href="" title="">
+    <img src="..\ico\eastmoney.png" height=20 width=20 border=0 /></a>
+</tr>
+
+<tr class='passClass'>
+    <td>test_mooc.TestMoocIndex</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
+    <td></td>
+</tr>
+
+<tr id='pt2.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_login</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
+        pass</a>
+
+    <div id='div_pt2.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.1: 2018-07-29 17:14:46,635 - root - INFO - ############################### START ###############################
+2018-07-29 17:14:51,144 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.492940902709961 seconds
+2018-07-29 17:14:52,297 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.146866798400879 seconds
+2018-07-29 17:14:55,762 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 3.4474456310272217 seconds
+2018-07-29 17:14:55,899 - root - INFO - SUCCESS     Clicked element: &lt;id-&gt;js-signin-btn&gt;, Spend 0.13109135627746582 seconds
+2018-07-29 17:14:57,198 - root - INFO - SUCCESS     Clear and type element: &lt;name-&gt;email&gt; content: kongsiwen0818@163.com, Spend 1.2929847240447998 seconds
+2018-07-29 17:14:57,330 - root - INFO - SUCCESS     Clear and type element: &lt;name-&gt;password&gt; content: lkp11104077ksw, Spend 0.1270895004272461 seconds
+2018-07-29 17:14:57,438 - root - INFO - SUCCESS     Clicked element: &lt;class-&gt;moco-btn-lg&gt;, Spend 0.10106849670410156 seconds
+2018-07-29 17:15:02,533 - root - INFO - SUCCESS     Clicked element: &lt;link_text-&gt;实战&gt;, Spend 2.088568687438965 seconds
+2018-07-29 17:15:03,691 - root - INFO - SUCCESS     Clicked element: &lt;link_text-&gt;前端开发&gt;, Spend 1.1387755870819092 seconds
+2018-07-29 17:15:08,733 - root - INFO - SUCCESS     Switch to the new window,new window's url: https://coding.imooc.com/?c=fe, Spend 5.035948038101196 seconds
+2018-07-29 17:15:10,530 - root - INFO - SUCCESS     Clicked element: &lt;class-&gt;shizhan-course-wrap&gt;, Spend 1.7792279720306396 seconds
+2018-07-29 17:15:15,573 - root - INFO - SUCCESS     Switch to the new window,new window's url: https://coding.imooc.com/class/251.html, Spend 5.036738395690918 seconds
+2018-07-29 17:15:15,656 - root - INFO - SUCCESS     Clicked element: &lt;class-&gt;js-addcart&gt;, Spend 0.07304048538208008 seconds
+2018-07-29 17:15:15,703 - root - INFO - SUCCESS     Move to element: &lt;class-&gt;shop-cart-icon&gt;, Spend 0.041028738021850586 seconds
+2018-07-29 17:15:15,805 - root - INFO - SUCCESS     Clicked element: &lt;link_text-&gt;去购物车&gt;, Spend 0.09705519676208496 seconds
+2018-07-29 17:15:16,830 - root - INFO - SUCCESS     Switch to the new window,new window's url: http://order.imooc.com/pay/cart, Spend 1.019970178604126 seconds
+2018-07-29 17:15:22,078 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.239936351776123 seconds
+2018-07-29 17:15:22,095 - root - INFO - ############################### END ###############################
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td align='center'>
+    <a href="" title="">
+    <img src="..\ico\eastmoney.png" height=20 width=20 border=0 /></a>
+</tr>
+
+<tr class='passClass'>
+    <td>test_personal_setting.TestPersonalSetting</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c3',1)">Detail</a></td>
+    <td></td>
+</tr>
+
+<tr id='pt3.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_setting</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.1')" >
+        pass</a>
+
+    <div id='div_pt3.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt3.1: 2018-07-29 17:15:22,112 - root - INFO - ############################### START ###############################
+2018-07-29 17:15:26,546 - root - INFO - SUCCESS     Start a new browser:chrome,Spend 4.417669296264648 seconds
+2018-07-29 17:15:27,703 - root - INFO - SUCCESS     Set browser window maxmized ,Spend 1.1518173217773438 seconds
+2018-07-29 17:15:31,933 - root - INFO - SUCCESS     Navigated to http://www.imooc.com/,Spend 4.211095809936523 seconds
+2018-07-29 17:15:32,114 - root - INFO - SUCCESS     Clicked element: &lt;id-&gt;js-signin-btn&gt;, Spend 0.17011523246765137 seconds
+2018-07-29 17:15:33,458 - root - INFO - SUCCESS     Clear and type element: &lt;name-&gt;email&gt; content: kongsiwen0818@163.com, Spend 1.3380529880523682 seconds
+2018-07-29 17:15:33,591 - root - INFO - SUCCESS     Clear and type element: &lt;name-&gt;password&gt; content: lkp11104077ksw, Spend 0.12508773803710938 seconds
+2018-07-29 17:15:33,702 - root - INFO - SUCCESS     Clicked element: &lt;class-&gt;moco-btn-lg&gt;, Spend 0.10606265068054199 seconds
+2018-07-29 17:15:36,800 - root - INFO - SUCCESS     Move to element: &lt;id-&gt;header-avator&gt;, Spend 0.0890650749206543 seconds
+2018-07-29 17:15:36,938 - root - INFO - SUCCESS     Clicked element: &lt;link_text-&gt;个人设置&gt;, Spend 0.13209128379821777 seconds
+2018-07-29 17:15:37,965 - root - INFO - SUCCESS     Switch to the new window,new window's url: https://www.imooc.com/user/setbindsns, Spend 1.0217101573944092 seconds
+2018-07-29 17:15:38,000 - root - INFO - SUCCESS     Move to element: &lt;class-&gt;avator-img&gt;, Spend 0.030022144317626953 seconds
+2018-07-29 17:15:38,082 - root - INFO - SUCCESS     Clicked element: &lt;class-&gt;js-avator-link&gt;, Spend 0.07505416870117188 seconds
+2018-07-29 17:15:38,352 - root - INFO - SUCCESS     Typed element:&lt;id-&gt;upload&gt; content: F:/workspace/MoocAutoTest/data/xiongbenxiogn1.jpg,Spend 0.26318836212158203 seconds
+2018-07-29 17:15:38,522 - root - INFO - SUCCESS     Clicked element: &lt;link_text-&gt;确定&gt;, Spend 0.15210795402526855 seconds
+2018-07-29 17:15:41,681 - root - INFO - SUCCESS     Closed all window and quit the driver, Spend 3.151533365249634 seconds
+2018-07-29 17:15:41,686 - root - INFO - ############################### END ###############################
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td align='center'>
+    <a href="" title="">
+    <img src="..\ico\eastmoney.png" height=20 width=20 border=0 /></a>
+</tr>
+
+<tr id='total_row'>
+    <td>Total</td>
+    <td>3</td>
+    <td>3</td>
+    <td>0</td>
+    <td>0</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+</tr>
+</table><br><br><br><br><br><br><br>
+
+
+<div id='ending'>&nbsp;</div>
+
+</body>
+</html>

@@ -93,7 +93,6 @@ Version in 0.7.1
 import datetime
 import io
 import sys
-import time
 import unittest
 from xml.sax import saxutils
 
@@ -187,7 +186,7 @@ class Template_mixin(object):
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>%(title)s</title>
+    <title>Test Result</title>
     <meta name="generator" content="%(generator)s"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     %(stylesheet)s
@@ -304,11 +303,12 @@ function showOutput(id, name) {
     # alternatively use a <link> for external style sheet, e.g.
     #   <link rel="stylesheet" href="$url" type="text/css">
 
+
     STYLESHEET_TMPL = """
 <style type="text/css" media="screen">
 body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
 table       { font-size: 100%; }
-pre         { }
+pre         {}
 
 /* -- heading ---------------------------------------------------------------------- */
 h1 {
@@ -349,8 +349,7 @@ a.popup_link:hover {
     font-family: "Lucida Console", "Courier New", Courier, monospace;
     text-align: left;
     font-size: 8pt;
-    width: 800px;
-
+    width: 500px;
 }
 
 }
@@ -368,7 +367,6 @@ a.popup_link:hover {
     font-weight: bold;
     color: white;
     background-color: #777;
-    text-align:center;
 }
 #result_table td {
     border: 1px solid #777;
@@ -399,7 +397,7 @@ a.popup_link:hover {
     #
 
     HEADING_TMPL = """<div class='heading'>
-<h1>%(title)s</h1>
+<h1 style="color:blue">%(title)s</h1>
 %(parameters)s
 <p class='description'>%(description)s</p>
 </div>
@@ -409,12 +407,14 @@ a.popup_link:hover {
     HEADING_ATTRIBUTE_TMPL = """<p class='attribute'><strong>%(name)s:</strong> %(value)s</p>
 """ # variables: (name, value)
 
+
+
     # ------------------------------------------------------------------------
     # Report
     #
 
     REPORT_TMPL = """
-<p id='show_detail_line'>Show
+<p id='show_detail_line'>Show:
 <a href='javascript:showCase(0)'>Summary</a>
 <a href='javascript:showCase(1)'>Failed</a>
 <a href='javascript:showCase(2)'>All</a>
@@ -429,42 +429,45 @@ a.popup_link:hover {
 <col align='right' />
 </colgroup>
 <tr id='header_row'>
-    <td colspan='2'>Test Group/Test case</td>
+    <td>Test Group/Test case</td>
     <td>Count</td>
     <td>Pass</td>
     <td>Fail</td>
     <td>Error</td>
     <td>View</td>
+    <td>Screenshot</td>
 </tr>
 %(test_list)s
 <tr id='total_row'>
-    <td colspan='2'>Total</td>
+    <td>Total</td>
     <td>%(count)s</td>
     <td>%(Pass)s</td>
     <td>%(fail)s</td>
     <td>%(error)s</td>
     <td>&nbsp;</td>
+    <td>&nbsp;</td>
 </tr>
-</table>
+</table><br><br><br><br><br><br><br>
+
 """ # variables: (test_list, count, Pass, fail, error)
 
     REPORT_CLASS_TMPL = r"""
 <tr class='%(style)s'>
     <td>%(desc)s</td>
-    <td>%(description)s</td>
     <td>%(count)s</td>
     <td>%(Pass)s</td>
     <td>%(fail)s</td>
     <td>%(error)s</td>
     <td><a href="javascript:showClassDetail('%(cid)s',%(count)s)">Detail</a></td>
+    <td></td>
 </tr>
 """ # variables: (style, desc, count, Pass, fail, error, cid)
 
 
     REPORT_TEST_WITH_OUTPUT_TMPL = r"""
 <tr id='%(tid)s' class='%(Class)s'>
-    <td colspan='2' class='%(style)s'><div class='testcase'>%(desc)s</div></td>
-    <td colspan='7' align='center'>
+    <td class='%(style)s'><div class='testcase'>%(desc)s</div></td>
+    <td colspan='5' align='center'>
 
     <!--css div popup start-->
     <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_%(tid)s')" >
@@ -482,6 +485,9 @@ a.popup_link:hover {
     <!--css div popup end-->
 
     </td>
+    <td align='center'>
+    <a href="%(image)s" title="%(image)s">
+    <img src="..\ico\eastmoney.png" height=20 width=20 border=0 /></a>
 </tr>
 """ # variables: (tid, Class, style, desc, status)
 
@@ -496,12 +502,20 @@ a.popup_link:hover {
 
     REPORT_TEST_OUTPUT_TMPL = r"""
 %(id)s: %(output)s
+""" # variables: (id, output)
+    REPORT_TEST_OUTPUT_IMAGE = r"""
+%(screenshot)s
 """
-    # variables: (id, output)
+
+
+
+
+
 
     # ------------------------------------------------------------------------
     # ENDING
     #
+
     ENDING_TMPL = """<div id='ending'>&nbsp;</div>"""
 
 # -------------------- The end of the Template class -------------------
@@ -617,7 +631,6 @@ class HTMLTestRunner(Template_mixin):
             self.description = self.DEFAULT_DESCRIPTION
         else:
             self.description = description
-
         self.startTime = datetime.datetime.now()
 
 
@@ -627,7 +640,7 @@ class HTMLTestRunner(Template_mixin):
         test(result)
         self.stopTime = datetime.datetime.now()
         self.generateReport(test, result)
-        print('\nTime Elapsed: %s' % (self.stopTime-self.startTime), file=sys.stderr)
+        print(sys.stderr, '\nTime Elapsed: %s' % (self.stopTime-self.startTime))
         return result
 
 
@@ -654,11 +667,11 @@ class HTMLTestRunner(Template_mixin):
         startTime = str(self.startTime)[:19]
         duration = str(self.stopTime - self.startTime)
         status = []
-        if result.success_count: status.append('Pass %s'    % result.success_count)
-        if result.failure_count: status.append('Failure %s' % result.failure_count)
-        if result.error_count:   status.append('Error %s'   % result.error_count  )
+        if result.success_count: status.append('Pass:%s '    % result.success_count)
+        if result.failure_count: status.append('Failure:%s ' % result.failure_count)
+        if result.error_count:   status.append('Error:%s '   % result.error_count  )
         if status:
-            status = ' | '.join(status)
+            status = ' '.join(status)
         else:
             status = 'none'
         return [
@@ -724,12 +737,10 @@ class HTMLTestRunner(Template_mixin):
                 name = "%s.%s" % (cls.__module__, cls.__name__)
             doc = cls.__doc__ and cls.__doc__.split("\n")[0] or ""
             desc = doc and '%s: %s' % (name, doc) or name
-            description = cls_results[0][1].case_name
 
             row = self.REPORT_CLASS_TMPL % dict(
                 style = ne > 0 and 'errorClass' or nf > 0 and 'failClass' or 'passClass',
                 desc = desc,
-                description = description,
                 count = np+nf+ne,
                 Pass = np,
                 fail = nf,
@@ -764,19 +775,27 @@ class HTMLTestRunner(Template_mixin):
         if isinstance(o,str):
             # TODO: some problem with 'string_escape': it escape \n and mess up formating
             # uo = unicode(o.encode('string_escape'))
+            # uo = o.decode('latin-1')
             uo = o
+            # uo = o.decode('utf-8')
+
         else:
             uo = o
         if isinstance(e,str):
             # TODO: some problem with 'string_escape': it escape \n and mess up formating
             # ue = unicode(e.encode('string_escape'))
+            # ue = e.decode('latin-1')
             ue = e
+            # ue = e.decode('utf-8')
         else:
             ue = e
 
         script = self.REPORT_TEST_OUTPUT_TMPL % dict(
             id = tid,
             output = saxutils.escape(uo+ue),
+        )
+        image = self.REPORT_TEST_OUTPUT_IMAGE % dict(
+            screenshot = saxutils.escape(uo+ue)
         )
 
         row = tmpl % dict(
@@ -785,8 +804,10 @@ class HTMLTestRunner(Template_mixin):
             style = n == 2 and 'errorCase' or (n == 1 and 'failCase' or 'none'),
             desc = desc,
             script = script,
+            image = o[(int(o.find("test"))+4):(int(o.find("png"))+3)],
             status = self.STATUS[n],
         )
+
         rows.append(row)
         if not has_output:
             return

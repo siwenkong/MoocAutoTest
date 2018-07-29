@@ -151,6 +151,7 @@ class PySelenium(object):
         driver.max_window()
         """
         t1 = time.time()
+        # self.driver.maximize_window()
         self.driver.maximize_window()
         self.my_print("{0} Set browser window maxmized ,Spend {1} seconds".format(success, time.time() - t1))
 

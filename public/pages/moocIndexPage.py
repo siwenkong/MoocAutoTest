@@ -23,7 +23,7 @@ class MoocIndexPage(basepage.Page):
 
     def click_login(self):
         """"点击登陆按钮"""
-        self.dr.click('css->input.btn-red.btn-full.xa-login')
+        self.dr.click('class->moco-btn-lg')
         # self.dr.click('class->btn-red')
         time.sleep(3)
 
@@ -37,17 +37,18 @@ class MoocIndexPage(basepage.Page):
 
     def click_second(self):
         """"点击实战页面上方最右边一个按钮"""
-        self.dr.click_element('css->a.banner-item.l', 1)
+        # self.dr.click('link_text->去购物车')
+        self.dr.click('link_text->前端开发')
         self.dr.into_new_window()
 
     def click_flash(self):
         """"点击实战列表的第二项"""
-        self.dr.click_element('css->a.r.study-btn', 1)
+        self.dr.click_element('class->shizhan-course-wrap', 1)
         self.dr.into_new_window()  #移动到新打开的窗口
 
     def click_addCart(self):
         """"点击添加购物车"""
-        self.dr.click('class->sz-add-shopping-cart')
+        self.dr.click('class->js-addcart')
 
     def move_cart(self):
         """"将鼠标移动到购物车按钮上"""
